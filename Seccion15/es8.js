@@ -26,3 +26,7 @@ Object.values(obj).forEach((v)=>{
 Object.entries(obj).forEach((v)=>{
     console.log(v)
 })
+//Object enries MAP
+Object.entries(obj).map((value)=>{
+    return value[1]+value[0].replace('username','peperoni');
+})
