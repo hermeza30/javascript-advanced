@@ -15,16 +15,16 @@ let obj={
 }
 
 Object.keys(obj).forEach(k => {
-    console.log(k,obj[k])
+    console.log(k,obj[k])//Puedo obtener el key y valor del objeto
 });
 
 //Object values
 Object.values(obj).forEach((v)=>{
-    console.log("value",v)
+    console.log("value",v)//Solo el valor
 })
 //Object enries
 Object.entries(obj).forEach((v)=>{
-    console.log(v)
+    console.log(v)//Devuelve un array [key,valor] por cada properti
 })
 //Object enries MAP
 Object.entries(obj).map((value)=>{
