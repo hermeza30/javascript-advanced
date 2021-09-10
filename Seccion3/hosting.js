@@ -1,6 +1,7 @@
 //JVR tiene dos fases la 
 /**
  * HOSTING- Fase de creacion de variables y funciones declaration
+ * El hoisting sucede en cada fase de creacion.
  * esto lo hace antes de ejecutar
  * las declaration function son fully hoisted
  * las variables son partialy hoisted
