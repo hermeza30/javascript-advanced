@@ -35,5 +35,5 @@ wizard.heal.apply(archer,[4,5])//Le añado a archer la function heal2 y la ejecu
 console.log(archer)
 
 //BIND me retorna una function console.log(archer)
-const r=wizard.heal.bind(archer,[4,5])//Le añado a archer la function heal2 y la ejecuto.
+const r=wizard.heal.bind(archer,[4,5])//Bind hace un store de la function y retorna la misma
 console.log(r())
