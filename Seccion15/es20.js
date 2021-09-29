@@ -37,7 +37,8 @@ const weight2=tony_pokemon.picachu.weight;//Error porque no puede leer el valor 
 
 let weight3=tony_pokemon?.picachu?.weight;
 /**Double ?? vs || */
-/**El primero chequea que no sea nulo ni undefined
+/**El primero chequea que no sea nulo ni undefined deja pasar '',false,0
+ * 
  * El segundo chequea que tenga un valor distinto de 0, '', null,false, undefined
  */
 
