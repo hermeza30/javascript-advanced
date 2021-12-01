@@ -28,7 +28,7 @@ const obj={
     sing(){
         console.log("a",this);//Objeto
         var anotherFunction=function(){
-            console.log("b",this);//Obj  con la function arrow 
+            console.log("b",this);//Se bindea el objeto para obtener el this 
         }
         return anotherFunction.bind(this);//Usando bind
     }

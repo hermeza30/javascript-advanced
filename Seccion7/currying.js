@@ -7,3 +7,5 @@ curriedMultiply(5)(9);
 
 const cm=curriedMultiply(4);
 cm(4);
+cm(3);
+cm(2);
