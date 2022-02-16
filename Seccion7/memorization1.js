@@ -1,3 +1,4 @@
+//Caching es una forma de storear variables que se necesitaran en otras partes
 function addTo90(n){
     return n+80;
 }
@@ -9,5 +10,5 @@ function memorize(n){
     }else{
         cache[n]=5+80;
         return cache[n];
-    }
+    }  
 }//Forma de memorizar y usar el cache para guardar valores.

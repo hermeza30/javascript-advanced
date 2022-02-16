@@ -1,7 +1,7 @@
 function a(){
     console.log(this)//Hace referencia al objeto windows
 }
-a()
+a()//window.a()
 
 function b(){
     'use strict'
@@ -24,7 +24,7 @@ obj.sing();//Hace referencia al objeto
 //2:Execute the same code for multiple object
 
 function importPerson(){
-    console.log(this.name)//llama al windows object
+    console.log(this.name)//llama al windows object, window.name
 }
 var name="Sunny";
 const obj1={
