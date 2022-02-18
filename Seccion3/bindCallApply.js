@@ -1,3 +1,13 @@
+//Diference Apply vs Call
+// The difference is that apply lets you invoke the function with arguments as an array; call requires the parameters be listed explicitly. A useful mnemonic is "A for array and C for comma."
+
+// See MDN's documentation on apply and call.
+
+// Pseudo syntax:
+
+// theFunction.apply(valueForThis, arrayOfArgs)
+
+// theFunction.call(valueForThis, arg1, arg2, ...)
 function a(){
     console.log("hi");
 }
@@ -20,7 +30,7 @@ const archer={
 
 //CALL-Como hago para que archer herede la function de wizard.
 console.log(archer)
-wizard.heal.call(archer)//Le añado a archer la function heal y la ejecuto.
+wizard.heal.call(archer)//Le añado a archer la function heal y la ejecuto. Hago que archer pueda ejecutar la funcion heredada de wizard.
 console.log(archer)
 
 
