@@ -1,5 +1,5 @@
 //Windows obje
-const obj={
+const obj1={
     name:'billy',
     sing(){
         console.log("a",this);//Objeto
@@ -9,9 +9,9 @@ const obj={
         anotherFunction();
     }
 }
-obj.sing();
+obj1.sing();
 //Obj Arrow Function
-const obj={
+const obj2={
     name:'billy',
     sing(){
         console.log("a",this);//Objeto
@@ -21,9 +21,9 @@ const obj={
         anotherFunction();
     }
 }
-obj.sing();
+obj2.sing();
 //Bind Function
-const obj={
+const obj3={
     name:'billy',
     sing(){
         console.log("a",this);//Objeto
@@ -33,4 +33,4 @@ const obj={
         return anotherFunction.bind(this);//Usando bind
     }
 }
-obj.sing()();
+obj3.sing()();

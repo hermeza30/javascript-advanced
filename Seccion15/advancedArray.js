@@ -12,3 +12,15 @@ const filterArrau=array.filter(num=>{
 
 const redArray=array.reduce((accu,num)=>accu+num);
 console.log('Reduce',redArray);
+
+//Recorrer objeto
+
+let obj={
+    username0:'santa',
+    username1:'santa1',
+    username2:'santa2',
+  }
+  for(const [key,value] of Object.entries(obj)){
+    console.log("key",key,value)
+  }
+  

@@ -30,3 +30,9 @@ console.log(c(3));
 
 //No side effect and Function purity
 
+//Lo anterior equivale a
+function compusito(f,g){
+    function recibiend(data){
+        f(g(data));
+    }
+}
