@@ -4,8 +4,9 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+      },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/hermeza30/javascript-advanced.git"
@@ -17,6 +18,10 @@
   },
   "homepage": "https://github.com/hermeza30/javascript-advanced#readme",
   "dependencies": {
-    "node-fetch": "^2.6.1"
+    "axios": "^0.27.2",
+    "express": "^4.18.1",
+    "node-fetch": "^2.6.1",
+    "nodemon": "^2.0.16",
+    "rxjs": "^7.5.5"
   }
 }

@@ -1,5 +1,10 @@
-const multiplyBy3AndAabsolute=compose(mult3, abs)
+//currying map list
+let lista=[{"name":"uno"},{"name":"dos"}];
 
-const abs=(data)=>Math.abs(data);
-const mul3=(data)=>data*3
-const compoes=(f,g)=>(data)=>f(g(data))
+
+const curry=(propiedad)=>objRef=>objRef[propiedad];
+const get=curry('name')
+
+const currymap=(fn)=>(lista)=>lista.map(fn);
+const map=currymap(get)
+console.log(map(lista))

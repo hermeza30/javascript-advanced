@@ -52,10 +52,10 @@ let weight3=tony_pokemon?.picachu?.weight;
         power3:false
     }
 }
-const power=tony_pokemon?.raichu.power||'no power'
+const power=tony_pokemon?.raichu.power||'no power'//--->no power
 const powe2=tony_pokemon?.raichu.power2||'no power'
 const powe3=tony_pokemon?.raichu.power3||'no power'
 //con ??
-const power4=tony_pokemon?.raichu.power??'no power'
+const power4=tony_pokemon?.raichu.power??'no power'//--->''
 const powe5=tony_pokemon?.raichu.power2??'no power'
 const powe6=tony_pokemon?.raichu.power3??'no power'

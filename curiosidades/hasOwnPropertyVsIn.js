@@ -8,13 +8,13 @@ For example, the Object base class in JavaScript has a __proto__ property, a con
  */
 
 
-'constructor' in obj; // true
-'__proto__' in obj; // true
-'hasOwnProperty' in obj; // true
+'constructor' in objCualquiera; // true
+'__proto__' in objCualquiera; // true
+'hasOwnProperty' in objCualquiera; // true
 
-obj.hasOwnProperty('constructor'); // false
-obj.hasOwnProperty('__proto__'); // false
-obj.hasOwnProperty('hasOwnProperty'); // false
+objCualquiera.hasOwnProperty('constructor'); // false
+objCualquiera.hasOwnProperty('__proto__'); // false
+objCualquiera.hasOwnProperty('hasOwnProperty'); // false
 
 /**
  *
