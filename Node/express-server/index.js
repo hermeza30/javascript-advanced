@@ -1,39 +1,31 @@
 const express = require("express");
+const friendsRouter = require("./routers/friends.router");
+const messageRouter = require("./routers/message.router");
+const path = require("path");
 const app = express();
 const port = 3000;
+app.set("view engine", "hbs");
+app.set("views", path.join(__dirname, "views"));
 
-const friends = [
-  {
-    id: 0,
-    name: "Albert einsteing",
-  },
-];
+app.use((req, res, next) => {
+  const start = new Date();
+  next();
+  const end = Date.now() - start;
+  console.log(`From ${req.baseUrl} Time:${end}.ms`);
+});
+
+app.use("/site", express.static(path.join(__dirname, "public")));
+app.use(express.json());
+
+app.use("/friends", friendsRouter);
+app.use("/messages", messageRouter);
 
 app.get("/", (req, res) => {
-  res.sendStatus(200, "Ingresado");
+  res.render('index',{
+    title:"Pequeño litele",
+    caption:"Lalolanda"
+  })
 });
-
-app.get("/friends", (req, res) => {
-  res.json(friends);
-});
-
-app.get("/friends/:friendId", (req, res) => {
-  const friendId = Number(req.params.friendId);
-  const objFriend = friends[friendId];
-  if (objFriend) {
-    res.json(objFriend);
-  } else {
-    res.status(404, { text: "Not found" });
-  }
-});
-
-app.get("/messages", (req, res) => {
-  res.json({ text: "En mensajes" });
-});
-
-app.use(function(req,res,next){
-
-})
 
 app.listen(port, () => {
   console.log(`server listening`);
