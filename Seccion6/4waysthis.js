@@ -31,7 +31,7 @@ const person4={
     age:40,
     hi:function(){
         var inner=()=>{
-            console.log("hi",this.name)//Con lexical scope
+            console.log("hi",this.name)//Con lexical scope retorna object
         }
         return inner();
     }
@@ -42,7 +42,7 @@ const person5={
     age:40,
     hi:function(){
         var inner=function(){
-            console.log("hi",this.name)//Con dynamic scope
+            console.log("hi",this.name)//Con dynamic scope retorna window
         }
         return inner();
     }
